@@ -1,6 +1,6 @@
 # Lab 01 – Sorting and Searching using C++
 
-## 💡 Problem Statement
+## Problem Statement
 
 **Part 1**  
 Write a C++ menu-driven program to sort a given array in ascending order using:
@@ -17,7 +17,7 @@ Use one of the sorting functions to sort before binary search.
 
 ---
 
-## 📂 File Structure
+## File Structure
 
 | File Name     | Description                                             |
 |---------------|---------------------------------------------------------|
@@ -27,7 +27,7 @@ Use one of the sorting functions to sort before binary search.
 
 ---
 
-## 🧪 How to Compile and Run
+## How to Compile and Run
 
 Use the terminal (recommended in VS Code):
 
@@ -45,7 +45,7 @@ g++ -o search search.cpp sort.cpp
 
 ---
 
-## 📈 Features
+## Features
 
 - Sorting Algorithms:
   - Bubble Sort
@@ -61,7 +61,7 @@ g++ -o search search.cpp sort.cpp
 
 ---
 
-## 🛠️ Best Practices Followed
+## Best Practices Followed
 
 - Modularized logic using functions
 - Header file used to reuse code between programs
@@ -71,7 +71,7 @@ g++ -o search search.cpp sort.cpp
 
 ---
 
-## 📌 Sample Output
+## Sample Output
 
 **Sorting Menu Example:**
 ```
