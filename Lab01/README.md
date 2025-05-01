@@ -19,11 +19,11 @@ Use one of the sorting functions to sort before binary search.
 
 ## 📂 File Structure
 
-| File Name     | Description                              |
-|---------------|------------------------------------------|
-| `sort.cpp`    | Menu-driven sorting program implementation |
-| `sort.h`      | Header file with sorting/search functions |
-| `search.cpp`  | Menu-driven searching program using `sort.h` |
+| File Name     | Description                                             |
+|---------------|---------------------------------------------------------|
+| `sort.cpp`    | Contains definitions of sorting algorithms              |
+| `sort.h`      | Header file declaring sorting and search functions      |
+| `search.cpp`  | Menu-driven program for search (requires `sort.cpp`)    |
 
 ---
 
@@ -31,15 +31,15 @@ Use one of the sorting functions to sort before binary search.
 
 Use the terminal (recommended in VS Code):
 
-### ➤ For `sort.cpp`
+### ➤ For `sort.cpp` (standalone sorting menu)
 ```bash
 g++ -o sort sort.cpp
 ./sort
 ```
 
-### ➤ For `search.cpp`
+### ➤ For `search.cpp` (requires `sort.cpp` to be linked)
 ```bash
-g++ -o search search.cpp
+g++ -o search search.cpp sort.cpp
 ./search
 ```
 
