@@ -1,0 +1,10 @@
+#ifndef SORT_H
+#define SORT_H
+
+#include <stdio.h>
+void bubblesort(int arr[],int n);
+void selectionsort(int arr[],int n);
+void insertionsort(int arr[],int n);
+void display(int arr[],int n);
+
+#endif
