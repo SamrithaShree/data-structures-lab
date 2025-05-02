@@ -1,76 +1,122 @@
-# Lab 04 – Linked List ADT in C++
+# Lab 04 – Singly Linked List Operations in C++
 
-## Overview
+## Problem Statement
 
-This lab contains two parts focused on implementing List ADTs using **singly linked lists** in C++. The code follows modular design and good coding practices, with clear separation of logic.
+**Part A**  
+Implement a menu-driven program in C++ using a singly linked list to support the following List ADT operations:
+- Insert at beginning, end, and after a key
+- Delete from beginning, end, and by key
+- Search for a value
+- Display all elements
+- Display in reverse order
+- Reverse the entire linked list
 
----
+**Part B**  
+Create a header-based C++ program that manages sorted singly linked lists. It should:
+- Maintain ascending order while inserting
+- Merge two sorted linked lists
+- Display the final merged list
 
-## 🔹 Part A: Menu-Driven Singly Linked List
-
-### File: `main.cpp`
-
-Implements a **List ADT using singly linked list** with the following operations:
-
-### Operations:
-1. Insert at Beginning  
-2. Insert at End  
-3. Insert at Position  
-4. Delete from Beginning  
-5. Delete from End  
-6. Delete from Position  
-7. Search Element  
-8. Display List  
-9. Display in Reverse (does not modify the list)  
-10. Reverse the Linked List (modifies the list)  
-11. Exit  
-
-### Time Complexities:
-| Operation           | Time Complexity |
-|---------------------|-----------------|
-| Insert Beginning    | O(1)            |
-| Insert End          | O(n)            |
-| Insert Position     | O(n)            |
-| Delete Beginning    | O(1)            |
-| Delete End          | O(n)            |
-| Delete Position     | O(n)            |
-| Search              | O(n)            |
-| Display             | O(n)            |
-| Display Reverse     | O(n) (recursive)|
-| Reverse Link        | O(n)            |
+Use appropriate class design and file modularization with a header file and a driver file.
 
 ---
 
-## 🔹 Part B: Sorted Merge of Two Linked Lists
+## File Structure
 
-### Files:
-- `linkedlist2.h` – Header file containing `LinkedList` class with ascending insert and merge logic.
-- `main2.cpp` – Menu-driven main program using the header file.
-
-### Operations:
-1. Insert into List1 (in ascending order)  
-2. Insert into List2 (in ascending order)  
-3. Merge List1 and List2 into List3 (sorted merge)  
-4. Display all Lists  
-5. Exit  
-
-### Time Complexities:
-| Operation        | Time Complexity |
-|------------------|-----------------|
-| Insert Ascending | O(n)            |
-| Merge Lists      | O(n + m)        |
-| Display          | O(n)            |
-
-### Design Details:
-- **insertAscending()** inserts a node maintaining sorted order.
-- **mergeSorted()** is a static method that merges two sorted lists into a third, also sorted.
-- Uses `gethead()` as a private helper function to return internal list head safely.
+| File Name          | Description                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| `linkedlist1.cpp`  | Menu-driven program implementing all List ADT operations using singly linked list |
+| `linkedlist2.h`    | Header file containing the definition and declaration of a SortedList class |
+| `linkedlist2.cpp`  | Driver file using `linkedlist2.h` to perform sorted insertions and merging  |
 
 ---
 
-## 💡 Compilation & Run Instructions
+## How to Compile and Run
 
-### Compile Part A:
+### ➤ Run Part A:
+
 ```bash
-g++ main.cpp -o listA
-./listA
+g++ -o lab04a linkedlist1.cpp
+./lab04a
+```
+
+### ➤ Run Part B:
+
+```bash
+g++ -o lab04b linkedlist2.cpp
+./lab04b
+```
+
+Make sure all files are in the same directory.
+
+---
+
+## Features
+
+### Part A
+- Insertion at beginning, end, and after a key
+- Deletion from beginning, end, and by key
+- Search for an element
+- Display list in normal and reverse order
+- Full list reversal
+
+### Part B
+- Maintain ascending order on insert
+- Efficient merging of two sorted lists
+- Clean display of merged result
+
+---
+
+## Best Practices Followed
+
+- Clean modular code using `.h` and `.cpp` files
+- Proper use of classes and dynamic memory
+- Separate logic and interface
+- Menu-driven CLI interaction
+- Reversal and merge logic handled efficiently
+
+---
+
+## Sample Output (Part A)
+
+```
+Menu:
+1. Insert at Beginning
+2. Insert at End
+3. Insert After Key
+4. Delete from Beginning
+5. Delete from End
+6. Delete by Key
+7. Search
+8. Display
+9. Display in Reverse
+10. Reverse List
+11. Exit
+
+Enter your choice: 1
+Enter value to insert: 10
+
+List: 10
+```
+
+## Sample Output (Part B)
+
+```
+Insert elements in List 1:
+10 30 50 -1
+
+Insert elements in List 2:
+20 40 60 -1
+
+Merged List:
+10 20 30 40 50 60
+```
+
+---
+
+## Author Info
+
+- Name: R Samritha Shree  
+- Registration No: 24011101097  
+- Lab: 04 – Data Structures Lab (C++)  
+- University: Shiv Nadar University Chennai
