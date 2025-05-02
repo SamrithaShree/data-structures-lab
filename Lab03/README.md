@@ -21,14 +21,14 @@ Write a C++ **menu-driven** program to implement the **List ADT** using an **arr
 
 | File Name     | Description                                   |
 |---------------|-----------------------------------------------|
-| `listadt.cpp` | Contains the class-based implementation of List ADT with all menu options |
+| `list.cpp` | Contains the class-based implementation of List ADT with all menu options |
 
 ---
 
 ## How to Compile and Run
 
 ```bash
-g++ -o lab03 listadt.cpp
+g++ -o lab03 list.cpp
 ./lab03
 ```
 
