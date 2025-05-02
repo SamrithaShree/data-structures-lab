@@ -114,5 +114,5 @@ The area of the cuboid is 26.00
 
 - Name: R Samritha Shree   
 - Registration No: 24011101097
-- Lab: 03 – Data Structures Lab (C++)
+- Lab: 02 – Data Structures Lab (C++)
 - University: Shiv Nadar University Chennai 
