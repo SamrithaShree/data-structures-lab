@@ -110,3 +110,9 @@ Enter the height:
 The area of the cuboid is 26.00
 ```
 ---
+## Author Info
+
+- Name: R Samritha Shree   
+- Registration No: 24011101097
+- Lab: 03 – Data Structures Lab (C++)
+- University: Shiv Nadar University Chennai 
