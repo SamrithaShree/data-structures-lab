@@ -55,6 +55,7 @@ int main(){
         printf("10.Exit\n");
         
         //user input
+        printf("Enter your option: ");
         scanf("%d",&option);
         switch(option){
             case 1:
