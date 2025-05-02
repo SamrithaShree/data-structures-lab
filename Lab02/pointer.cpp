@@ -81,6 +81,7 @@ int main(){
         printf("3.Perfect Number\n");
         printf("4.Exit\n");
 
+        printf("Enter your choice:");
         scanf("%d",option);
         switch(*option){
             case 1:
