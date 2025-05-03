@@ -50,6 +50,7 @@ Extend the Tree ADT to **construct an Expression Tree from a postfix expression*
 | `lab9_b.cpp`         | Calculates strength differences using STL max_element               |
 | `lab9_c.cpp`         | Implements BST with insert, traversals, and search operations       |
 | `lab9_d.cpp`         | Constructs expression tree from postfix and performs traversals     |
+| `lab9_d.h`    | Header file containing the expression tree node structure and logic used in Part D |
 
 ---
 
