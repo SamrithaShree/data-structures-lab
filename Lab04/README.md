@@ -103,10 +103,10 @@ List: 10
 
 ```
 Insert elements in List 1:
-10 30 50 -1
+10 30 50 
 
 Insert elements in List 2:
-20 40 60 -1
+20 40 60 
 
 Merged List:
 10 20 30 40 50 60
