@@ -1,6 +1,8 @@
+//program to check Palindrome, Armstrong, and Perfect numbers
 #include<stdio.h>
 #include <stdlib.h>
 #include <math.h>
+
 //function to check if the number is palindrome
 bool IsPalindrome(int*num){
     int*temp=(int*)malloc(sizeof(int));
@@ -20,6 +22,7 @@ bool IsPalindrome(int*num){
     free(reverse);
     return false;
 }
+
 //function to check if the number is Armstrong NUmber
 bool IsArmstrong(int*num){
     int*temp=(int*)malloc(sizeof(int));
@@ -48,6 +51,7 @@ bool IsArmstrong(int*num){
     return false;
 }
 
+//function to check if the number is Armstrong NUmber
 bool IsPerfect(int*num){
     int*temp=(int*)malloc(sizeof(int));
     int*i=(int*)malloc(sizeof(int));
@@ -73,7 +77,6 @@ int main(){
     int *option=(int*)malloc(sizeof(int));
     int *num1=(int*)malloc(sizeof(int));
     *num1=0;
-//Getting the user input
     while(1){
         printf("Menu: \n");
         printf("1.Palindrome Number\n");
