@@ -1,3 +1,4 @@
+//Header file declaring sorting and search function prototypes
 #ifndef SORT_H
 #define SORT_H
 
