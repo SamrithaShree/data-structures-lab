@@ -1,6 +1,7 @@
+//program to perform sorted insertions and merging using List ADT implemented 
 #include <stdio.h>
 #include "linkedlist2.h"
-//main function
+
 int main() {
     LinkedList list1, list2, mergedList;
     int choice, value;
