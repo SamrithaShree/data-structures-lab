@@ -1,7 +1,8 @@
+//program to implement the sorting algorithms
 #include <stdio.h>
 #include "sort.h"
 
-//function for perform bubble sort
+//function for performing bubble sort
 void bubblesort(int arr[], int n){
     for (int i = 0; i < n - 1; i++){
         int swapped = 0;
@@ -19,7 +20,7 @@ void bubblesort(int arr[], int n){
     }
 }
 
-//function for perform selection sort
+//function for performing selection sort
 void selectionsort(int arr[], int n){
     for (int i = 0; i < n - 1; i++){
         int minIndex = i;
