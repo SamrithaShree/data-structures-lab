@@ -1,3 +1,4 @@
+//Combined menu-driven program for both sorting and searching
 #include <stdio.h>
 #include "sort.h"
 
