@@ -1,14 +1,13 @@
-//header file
+//header file containing the definition and declaration of a SortedList class
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
 #include <stdio.h>
 #include <stdlib.h>
 
-//Creating class for linked list
+
 class LinkedList {
 private:
-    //Creating a structure for node
     struct Node {
         int data;
         struct Node* next;
@@ -92,7 +91,7 @@ LinkedList  LinkedList :: mergeSorted(LinkedList& list1, LinkedList& list2) {
     return mergedList;
 }
 
-//display function
+//function to display the list
 void LinkedList :: display() {
     struct Node* current = head;
     while (current) {
