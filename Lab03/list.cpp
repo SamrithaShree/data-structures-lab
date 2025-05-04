@@ -1,24 +1,22 @@
+//program to perform the functions of List ADT - Array implementation
+
 #include<stdio.h>
 //defining the size to be 5
 #define SIZE 5
 
-//defining the class
 class ListADT{
     private:
-    //data members are private
     int arr[SIZE];
     int count;
 
     public:
-    //Constructor
     ListADT(){
         count=0;
         for(int i=0;i<SIZE;i++){
             arr[i]=0;
         }
     }
-
-    //declaring the functions     
+    
     int insbeg(int value);
     int insend(int value);
     int inspos(int value,int pos);
@@ -34,13 +32,9 @@ class ListADT{
 
 
 int main(){
-    //declaring the object
     ListADT list;
-
-    
     int option,value,pos,k;
-
-    //Printing Menu 
+    
     while(1){
         printf("MENU:\n");
         printf("1.Insertion at Beginning\n");
@@ -54,7 +48,6 @@ int main(){
         printf("9.Rotate\n");
         printf("10.Exit\n");
         
-        //user input
         printf("Enter your option: ");
         scanf("%d",&option);
         switch(option){
@@ -113,8 +106,7 @@ int main(){
     return 0;
 }
 
-
-//defining function to insert a value in the beginning of the array
+//function to insert a value in the beginning of the array
 int ListADT :: insbeg(int value){
     if(count==SIZE){
         printf("The list if full\n");
@@ -129,7 +121,7 @@ int ListADT :: insbeg(int value){
 }
 
 
-//defining function to insert a value in the end of the array
+//function to insert a value in the end of the array
 int ListADT :: insend(int value){
     if(count==SIZE){
         printf("The list if full\n");
@@ -141,7 +133,7 @@ int ListADT :: insend(int value){
 }
 
 
-//defining function to insert a value in the given position
+//function to insert a value in the given position
 int ListADT :: inspos(int value,int pos){
     if(count==SIZE){
         printf("The list if full\n");
@@ -160,7 +152,7 @@ int ListADT :: inspos(int value,int pos){
 }
 
 
-//defining function to delete the value in the beginning of the array
+//function to delete the value in the beginning of the array
 int ListADT :: delbeg(){
     int num;
     if(count==0){
@@ -176,7 +168,7 @@ int ListADT :: delbeg(){
 }
 
 
-//defining function to delete the value at the end of the array
+//function to delete the value at the end of the array
 int ListADT :: delend(){
     int num;
     if(count==0){
@@ -190,7 +182,7 @@ int ListADT :: delend(){
 }
 
 
-//defining function to delete the value at the given position
+//function to delete the value at the given position
 int ListADT :: delpos(int pos){
     int num;
     if(count==0){
@@ -210,7 +202,7 @@ int ListADT :: delpos(int pos){
 }
 
 
-//defining function to search the given value in the array
+//function to search the given value in the array
 int ListADT :: search(int value){
     if(count==0){
         printf("The list is empty\n");
@@ -227,7 +219,7 @@ int ListADT :: search(int value){
 }
 
 
-//defining function to display the current array
+//function to display the current array
 void ListADT :: display(){
     if(count==0){
         printf("The list is empty\n");
@@ -241,7 +233,7 @@ void ListADT :: display(){
 }
 
 
-//defining function to reversing an array
+//function to reversing an array
 void ListADT :: reverse(int start,int end){
     int temp;
     while(start<end){
@@ -254,7 +246,7 @@ void ListADT :: reverse(int start,int end){
 }
 
 
-//defining function to rotate the array by the given number of elements
+//function to rotate the array by the given number of elements
 int ListADT :: rotate(int k){
     if(count==0){
         printf("The list is empty\n");
