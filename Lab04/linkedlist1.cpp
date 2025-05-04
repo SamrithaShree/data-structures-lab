@@ -1,16 +1,15 @@
+//program to perform functions of List ADT - Linked List implementation 
 #include<stdio.h>
 #include<stdlib.h>
-//Class definition
+
 class LinkedList{
     private:
-    //Creating a struct node
     struct node{
         int data;
         struct node *next;
     }*head;
 
     public:
-    //Constructor
     LinkedList(){
         head = NULL;
     }
@@ -112,7 +111,7 @@ int main(){
     return 0;
 }
 
-//Defining a function to insert the given value at the beginning of the linked list.
+//function to insert the given value at the beginning of the linked list.
 void LinkedList :: InsBeg(int val){
     struct node *newnode = (struct node*)malloc(sizeof(struct node));
     newnode->data = val;
@@ -121,7 +120,7 @@ void LinkedList :: InsBeg(int val){
     return;
 }
 
-//Defining a function to insert the given value at the end of the linked list.
+//function to insert the given value at the end of the linked list.
 void LinkedList :: InsEnd(int val){
     struct node *newnode = (struct node*)malloc(sizeof(struct node));
     newnode->data = val;
@@ -137,7 +136,7 @@ void LinkedList :: InsEnd(int val){
     temp->next = newnode;
 }
 
-//Defining a function to insert the given value at the given position
+//function to insert the given value at the given position
 void LinkedList :: InsPos(int val, int pos){
     if(pos<1){
         return;
@@ -161,7 +160,7 @@ void LinkedList :: InsPos(int val, int pos){
     
 }
 
-//Defining a function to delete at the beginning of the linked list.
+//function to delete at the beginning of the linked list.
 int LinkedList :: DelBeg(){
     int data;
     if(head==NULL){
@@ -174,7 +173,7 @@ int LinkedList :: DelBeg(){
     return data;
 }
 
-//Defining a function to delete at the end of the linked list.
+//function to delete at the end of the linked list.
 int LinkedList :: DelEnd(){
     int data;
     if(head==NULL){
@@ -194,7 +193,7 @@ int LinkedList :: DelEnd(){
     return data;
 }
 
-//Defining a function to delete at the given position of a linked list.
+//function to delete at the given position of a linked list.
 int LinkedList :: DelPos(int pos){
     int data;
     struct node *temp = head;
@@ -213,7 +212,7 @@ int LinkedList :: DelPos(int pos){
     }
 }
 
-//Defining a function to search a value in the linked list.
+//function to search a value in the linked list.
 int LinkedList :: Search(int val){
     int pos = 1;
     struct node *temp = head;
@@ -229,7 +228,7 @@ int LinkedList :: Search(int val){
     return -1;
 }
 
-//Defining a function to display the linked list 
+//function to display the linked list 
 void LinkedList :: Display(){
     printf("\n");
     struct node *temp = head;
@@ -248,8 +247,7 @@ void LinkedList :: Display(){
     return;
 }
 
-//Defining a function to display the reverse of the liked list without reversing the actual list
-//using a recursive function
+//function to display the reverse of the liked list without reversing the actual list
 void LinkedList :: DisplayReverse(){
     if(head==NULL){
         printf("The List is Empty\n");
@@ -259,7 +257,7 @@ void LinkedList :: DisplayReverse(){
         printf("NULL\n");
     }
 }
-
+//helper function to display the reverse of the liked list without reversing the actual list
 void LinkedList :: PrintReverse(node *node){
     if(node==NULL){
         return;
@@ -268,7 +266,7 @@ void LinkedList :: PrintReverse(node *node){
     printf("%d -> ",node->data);
 }
 
-//Defining a function to reverse the linked list
+//function to reverse the linked list
 void LinkedList :: ReverseLink(){
     node *cur = head;
     node *next = NULL;
